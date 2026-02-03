@@ -1,3 +1,28 @@
 body {
-  font-family: Arial, sans-serif;
+    background-color: #5B4E77;
+    color: #F1C8DB;
+    font-family: 'Roboto', sans-serif;
+    margin: 1;
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+a {
+    color:#8BE8CB;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#EDE7B1;
+    text-decoration: underline;
 }
