@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Military Real Time Strategy Games</title>
+
+    <link rel="icon" type="image/png" href="images/android-chrome-512x512.png">
+
+    <style>
+
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            background: #0f1720;
+            color: #e4edf7;
+            margin: 0;
+        }
+
+        header {
+            background: #1b2635;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #3aa6ff;
+        }
+
+        h1 {
+            margin: 0;
+            color: #4fc3ff;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #ffd166;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 6px;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        h2 {
+            color: #6fd3ff;
+        }
+
+        figure {
+            margin: 20px 0;
+        }
+
+        figure img {
+            max-width: 100%;
+            border-radius: 6px;
+        }
+
+        figcaption {
+            font-weight: bold;
+            margin-top: 6px;
+        }
+
+        .prompt {
+            font-style: italic;
+            font-size: .9em;
+            color: #9fb3c8;
+        }
+
+        footer {
+            background: #1b2635;
+            padding: 15px;
+            text-align: center;
+            margin-top: 30px;
+            border-top: 3px solid #3aa6ff;
+        }
+
+        footer a {
+            color: #4fc3ff;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        footer a:hover{
+            color: #ffffff;
+        }
+
+    </style>
+
+    <script>
+
+        function showSection(id) {
+            let sections = document.querySelectorAll("section");
+            sections.forEach(section => {section.classList.remove("active");});
+            document.getElementById(id).classList.add("active");
+        }
+
+        window.onload = function () {
+            showSection("what");
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Military Real Time Strategy Video Games</h1>
+        <nav>
+            <p>💥 <a href="#" onclick="showSection('what')">What</a> 💥
+            <a href="#" onclick="showSection('who')">Who</a> 💥
+            <a href="#" onclick="showSection('when')">When</a> 💥
+            <a href="#" onclick="showSection('where')">Where</a> 💥
+            <a href="#" onclick="showSection('how')">How</a> 💥
+            <a href="#" onclick="showSection('why')">Why</a> 💥</p>
+        </nav>
+        <nav>
+            <p>🤖<a href="#" onclick="showSection('ai')">AI Prompts</a>🤖</p>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section id="what" class="active">
+
+            <h2>What Are Military Real Time Strategy Games?</h2>
+
+            <p>
+                Military real time strategy games simulate large scale military conflicts using real military units,
+                tactics, and logistics systems. Players take command of command tanks, infantry,
+                artillery pieces, aircraft, and missile systems.
+            </p>
+
+            <p>
+                Games like WARNO and Steel Division 2 focus on battlefield tactics where things such as
+                positioning, reconnaissance, and combined arms tactics allow you to achieve victory.
+            </p>
+
+            <p>
+                Other real time strategy games such as Hearts of Iron IV and ICBM Escalation simulate entire nations,
+                they allow players to manage a nation's industry, economy, diplomacy, espionage and intelligence, and warfare doctrines.
+            </p>
+
+            <figure>
+
+                <img src="images/battlefield.png" alt="Screenshot taken from a WARNO game">
+
+                <figcaption>American tanks attempt to secure a bridgehead against Soviet forces in the game WARNO</figcaption>
+
+            </figure>
+
+            <p class="prompt">
+                AI Prompt for text: "Explain what military real time strategy games are, focus on game like WARNO, Steel Division 2, HOI4, and ICBM Escalation"
+            </p>
+
+        </section>
+
+        <section id="who">
+
+            <h2>Who Plays These Types of Games?</h2>
+
+            <p>
+                Players of military strategy games often enjoy history, military technology,
+                and deep strategic gameplay. 
+            </p>
+
+            <p>
+                The playerbase for these games are typically older than the average gaming audience, 
+                they are typically teenager and adults who enjoy much more strategic and complex gameplay.
+            </p>
+
+            <p>
+                These types of games also feature online communities where players can do things such as compete in multplayer 
+                matches and share and discuss strategy.
+            </p>
+
+            <figure>
+
+                <img src="images/player.png" alt="a Broken Arrow player">
+
+                <figcaption>VulcanHDGaming is a popular YouTuber who plays military real time strategy games</figcaption>
+
+            </figure>
+
+            <p class="prompt">
+                AI Prompt for text: "what kind of players play those games?"
+            </p>
+
+        </section>
+
+        <section id="when">
+
+            <h2>When Are Military Real Time Strategy Games Played?</h2>
+
+            <p>
+                Military strategy games usually require longer playtime sessions than games in other genres so it is best to play them when you have an abundance of free time either by yourself or with friends.
+            </p>
+
+            <p>
+                Multiplayer matches in games such as WARNO may last up to 30 to 60 minutes and full campaigns can
+                take hours to complete.
+            </p>
+
+            <p>
+                Some games feature grand strategy campaigns and can even last multiple days depending
+                on the complexity of the game.
+            </p>
+
+            <figure>
+
+                <img src="images/map.png" alt="WARNO Campaign map">
+
+                <figcaption>A campaign map for the game WARNO, completing a single campaign can take hours.</figcaption>
+
+            </figure>
+
+            <p class="prompt">
+                AI Prompt for text: “when are strategy games best played”
+            </p>
+
+        </section>
+
+        <section id="where">
+
+            <h2>Where Are These Games Played?</h2>
+
+            <p>
+                Most real time strategy games are played on PCs and computers because they contain
+                complex interfaces and require precise mouse control, and a variety of hotkeys to play.
+            </p>
+
+            <p>
+                Online multiplayer allows players from around the world to compete
+                or cooperate with each other in battles.
+            </p>
+
+            <p>
+                Many strategy game communities exist on forums and Discord servers where
+                players come together to play .
+            </p>
+
+            <figure>
+
+                <img src="images/where.jpg" alt="Broken Arrow being played on a laptop">
+
+                <figcaption>Me playing Broken Arrow on my laptop</figcaption>
+
+            </figure>
+            
+            <p class="prompt">
+                AI Prompt for text: “where are those types of games played”
+            </p>
+
+        </section>
+
+        <section id="how">
+
+            <h2>How Do Military Real Time Strategy Games Work?</h2>
+
+            <p>
+                Most military real time strategy games take place on a large map which represents a battlefield 
+                or region, the map contains things like terrain, foliage, roads, and strategic zones to be captured.
+            </p>
+
+            <p>
+                Players control many different units and will have to manage them according to their respective 
+                strengths and weaknesses. Players will select units and give them orders on what to do, such as moving 
+                to a spot or attacking an enemy unit. 
+            </p>
+
+            <p>
+                Another important feature in military real tim strategy games is the "fog of war", enemy forces are not 
+                visible to the player unless detected by one of their friendly units. 
+            </p>
+
+            <p>
+                Players must also manage resources like money and supplies which are used to call in reinforcements, 
+                or repair and rearm units, mismanaging your logistics will lead to your battle ending in a disasterous
+                defeat for you.
+            </p>
+
+            <figure>
+
+                <img src="images/units.jpg" alt="units in Steel Division 2">
+
+                <figcaption>Different Military Units from the game Steel Division 2</figcaption>
+
+            </figure>
+
+            <p class="prompt">
+                AI Prompt for text: “how to those types of games work”
+            </p>
+
+        </section>
+
+        <section id="why">
+
+            <h2>Why Do People Enjoy Military Real Time Strategy Games</h2>
+
+            <p>
+                Military real time strategy games require a good combination of strategic planning, 
+                fast reaction times, and the ability to improvise and adapt to everchanging circumstances
+            </p>
+
+            <p>
+                Many military real time strategy games are also based on real life conficts, weapons, 
+                time periods, and military doctrines. This makes military real time strategy games popular
+                among people with intrests in history.
+            </p>
+
+            <p>
+                Strategy games provide a very high skill ceiling, there is always room to improve your
+                abilities. 
+            </p>
+
+            <figure>
+
+                <img src="images/plan.png" alt="Strategic planning in HOI IV">
+
+                <figcaption>Planning a military strategy in Hearts of Iron IV, the game is very complex and endlessly replayable, this makes the game very popular amoung fans of historical military real time strategy games</figcaption>
+
+            </figure>
+
+            <p class="prompt">
+                AI Prompt for text: “why do players like those games”
+            </p>
+
+        </section>
+
+        <section id="ai">
+
+            <h2>AI Prompts Used</h2>
+            <p>
+                Prompts were used to generae text in order to put onto the page
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            <a href="https://validator.w3.org/">HTML Validation</a> |
+            <a href="https://jigsaw.w3.org/css-validator/">CSS Validation</a> |
+            <a href="https://wave.webaim.org/">Accessibility Check</a>
+        </p>
+
+        <p>
+            <a href = ../arthuresoong.com>Arthur Soong's Design Services</a>
+        </p>
+
+    </footer>
+
+</body>
+</html>
