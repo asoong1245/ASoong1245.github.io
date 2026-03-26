@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Introduction Form</title>
+
+	<link rel="stylesheet" href="../default.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
+
+	<script src="scripts/introduction.js" defer></script>
+
+	<script src="scripts/generate_html.js" defer></script>
+
+	<script src="scripts/generate_json.js" defer></script>
+
+	<script src="scripts/HTMLinclude.min.js" defer></script>
+</head>
+
+<body>
+
+	<div data-include="components/header.html"></div>
+
+	<main>
+
+		<h2 id="page-title">Introduction Form</h2>
+
+		<h3 id="page-subtitle">Please fill out the form below.</h3>
+
+		<form id="form">
+
+			<label>
+				First Name*
+				<input id="firstName" required value="Arthur" placeholder="First name">
+			</label>
+
+			<label>
+				Middle Name
+				<input id="middleName" value="E." placeholder="Middle name">
+			</label>
+
+			<label>
+				Nickname
+				<input id="nickname" placeholder="Nickname">
+			</label>
+
+			<label>
+				Last Name*
+				<input id="lastName" required value="Soong" placeholder="Last name">
+			</label>
+
+			<label>
+				Acknowledgement Date*
+				<input type="date" id="date" required value="2026-01-14">
+			</label>
+
+			<label>
+				Mascot Adjective*
+				<input id="mascotAdj" required value="Annoyed">
+			</label>
+
+			<label>
+				Mascot Animal*
+				<input id="mascotAnimal" required value="Stoat">
+			</label>
+
+			<label>
+				Divider*
+				<input id="divider" required value="|">
+			</label>
+
+			<label>
+				Picture*
+				<input type="file" id="image">
+			</label>
+
+			<label>
+				Picture Caption*
+				<input id="caption" required
+					value="A photo I took of F/A-18s from the US Navy Blue Angels during an airshow">
+			</label>
+
+			<label>
+				Personal Statement*
+				<textarea id="statement" required>
+I am a Sophomore at UNC Charlotte studying computer science with a concentration in cyber security. I hope to learn more about front-end systems and development.
+				</textarea>
+			</label>
+
+			<h3>Background</h3>
+
+			<textarea id="personalBg" required>
+I am 20 years old, I love working with computers and they have always been a subject that fascinated me.
+			</textarea>
+
+			<textarea id="professionalBg" required>
+I am hoping to acquire my bachelor’s degree in computer science and get a job in cyber security.
+			</textarea>
+
+			<textarea id="academicBg" required>
+I am a Sophomore at UNC Charlotte studying computer science with a concentration in cyber security.
+			</textarea>
+
+			<textarea id="subjectBg" required>
+I have some limited experience in designing and building websites in HTML, CSS, and Javascript.
+			</textarea>
+
+			<input id="computer" required
+				value="Laptop, ASUS ROG G16 2024, Windows 11 OS, currently in my apartment.">
+
+			<input id="backupComputer" required
+				value="I will go to the library and get a loaner or use the desktops there.">
+
+			<h3>Courses</h3>
+
+			<div id="courses"></div>
+
+			<button type="button" id="addCourse">Add Course</button>
+
+			<h3>Quote</h3>
+
+			<input id="quote" required value="Without music, life would be a mistake.">
+
+			<input id="quoteAuthor" required value="Friedrich Nietzsche">
+
+			<h3>Optional</h3>
+
+			<input id="funny" value="I cannot stand the taste of apples.">
+
+			<input id="extra"
+				value="I have some limited experience in front-end development but I definitely still have a lot to learn.">
+
+			<br><br>
+
+            <h3>Footer Links</h3>
+
+            <label>
+            ITIS 3135 Page
+            <input id="itisLink" value="../itis3135/index.html">
+            </label>
+
+            <label>
+            GitHub
+            <input id="githubLink" value="https://github.com/asoong1245">
+            </label>
+
+            <label>
+            University Webpage
+            <input id="unccLink" value="https://webpages.charlotte.edu/asoong1">
+            </label>
+
+            <label>
+            GitHub.io Page
+            <input id="githubioLink" value="https://asoong1245.github.io/">
+            </label>
+
+            <label>
+            LinkedIn
+            <input id="linkedinLink" value="https://www.linkedin.com/in/arthur-e-soong/">
+            </label>
+
+			<button type="submit">Submit</button>
+
+			<button type="reset">Reset</button>
+
+			<button type="button" id="clearBtn">Clear</button>
+
+			<button type="button" id="generateHTML">Generate HTML</button>
+
+			<button type="button" id="generateJSON">Generate JSON</button>
+
+		</form>
+
+		<section id="output"></section>
+
+	</main>
+
+	<div id="footer"></div>
+
+</body>
+
+</html>
