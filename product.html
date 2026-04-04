@@ -4,25 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Annoyed Stoat Pest Control</title>
-
+<link rel="stylesheet" href="default.css">
 <style>
 
 body{
   margin:0;
   padding-top:100px;
-  font-family:Arial, sans-serif;
-  text-align:center;
-  background:#fafafa;
+  font-family:Arial, sans-serif; 
 }
 
 #header{
   position:fixed;
   top:0;
   width:100%;
-  background:#f4f4f4;
+
   display:flex;
   justify-content:space-between;
-  align-items:center;
   padding:10px 20px;
   border-bottom:1px solid #ccc;
 }
@@ -42,7 +39,7 @@ section{
   padding:50px 20px;
 }
 
-#features{
+/* #features{
   background:#ffffff;
 }
 
@@ -52,11 +49,10 @@ section{
 
 #pricing{
   background:#ffffff;
-}
+} */
 
 .pricing-container{
   display:flex;
-  justify-content:center;
   gap:20px;
   flex-wrap:wrap;
 }
@@ -65,7 +61,7 @@ section{
   border:1px solid #ccc;
   padding:20px;
   width:200px;
-  background:white;
+
 }
 
 form{
@@ -90,13 +86,13 @@ form{
 <body>
 
 <header id="header">
-
 <img
 id="header-img"
 src="https://cdn.vectorstock.com/i/1000v/53/78/logo-stoat-jumping-mascot-cartoon-vector-29035378.jpg"
 alt="Annoyed Stoat Logo"
 width="120">
 
+<div data-include="itis3135/components/header.html"></div>
 <nav>
 <a href="index.html">Home</a>
 <a href="itis3135/contract.html">Contract</a>
@@ -105,6 +101,7 @@ width="120">
 <a href="inventory.html">Inventory</a>
 <a href="documentation.html">Documentation</a>
 <a href="product.html">Product</a>
+<a href="/itis3135/introduction.html">Introduction </a>
 </nav>
 </header>
 
@@ -200,6 +197,7 @@ value="Subscribe"
 </form>
 
 </section>
-
+<div data-include="itis3135/components/footer.html"></div>
+<script src = "itis3135/scripts/HTMLinclude.min.js"></script>
 </body>
 </html>
