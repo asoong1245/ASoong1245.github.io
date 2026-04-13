@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header><h1>Quiz</h1></header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="resources.html">Resources</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section>
+        <h2>Question 1</h2>
+        <p>What does a variable do?</p>
+
+        <label><input type="radio" name="q1" value="a"> Repeats code</label><br>
+        <label><input type="radio" name="q1" value="b"> Stores data</label><br>
+        <label><input type="radio" name="q1" value="c"> Ends a program</label>
+    </section>
+
+    <section>
+        <h2>Question 2</h2>
+        <p>Which of the following is a loop?</p>
+
+        <label><input type="radio" name="q2" value="a"> if</label><br>
+        <label><input type="radio" name="q2" value="b"> for</label><br>
+        <label><input type="radio" name="q2" value="c"> print</label>
+    </section>
+
+    <section>
+        <h2>Question 3</h2>
+        <p>What keyword defines a function?</p>
+
+        <label><input type="radio" name="q3" value="a"> func</label><br>
+        <label><input type="radio" name="q3" value="b"> def</label><br>
+        <label><input type="radio" name="q3" value="c"> function</label>
+    </section>
+
+    <button onclick="gradeQuiz()">Submit Quiz</button>
+
+    <p id="result"></p>
+
+</main>
+
+<footer>
+    <p>Quiz Page</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

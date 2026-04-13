@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header><h1>Practice</h1></header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="resources.html">Resources</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section>
+        <h2>Practice 1</h2>
+        <p>What is the value of x?</p>
+        <pre>x = 10</pre>
+
+        <input type="text" id="p1">
+        <button onclick="checkAnswer('p1', '10', 'r1')">Check</button>
+        <p id="r1"></p>
+    </section>
+
+    <section>
+        <h2>Practice 2</h2>
+        <p>What will this loop print? (last number)</p>
+        <pre>
+for i in range(3):
+    print(i)
+        </pre>
+
+        <input type="text" id="p2">
+        <button onclick="checkAnswer('p2', '2', 'r2')">Check</button>
+        <p id="r2"></p>
+    </section>
+
+    <section>
+        <h2>Practice 3</h2>
+        <p>What keyword is used to define a function?</p>
+
+        <input type="text" id="p3">
+        <button onclick="checkAnswer('p3', 'def', 'r3')">Check</button>
+        <p id="r3"></p>
+    </section>
+
+</main>
+
+<footer>
+    <p>Practice Page</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
