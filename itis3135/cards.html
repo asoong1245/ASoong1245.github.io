@@ -2,116 +2,115 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arthur Soong's Annoyed Stoat | ITIS 3135 | Cards Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthur Soong's Annoyed Stoat | ITIS 3135 | Cards</title>
   <link rel="stylesheet" href="../default.css">
-<style>
+  <style>
+    .PlayingCardsBody {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
 
-.PlayingCardsBody{
-  font-family: Arial, sans-serif;
-  text-align:center;
-}
 
+    #playing-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
 
-#playing-cards{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:20px;
-}
+    .card {
+      width: 150px;
+      height: 220px;
+      border: 2px solid black;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
 
-.card{
-  width:150px;
-  height:220px;
-  border:2px solid black;
-  border-radius:10px;
-  display:flex;
-  justify-content:space-between;
-  padding:10px;
-  background-color:#f9f9f9;
-}
+    .left {
+      align-self: flex-start;
+      font-weight: bold;
+    }
 
-.left{
-  align-self:flex-start;
-  font-weight:bold;
-}
+    .middle {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 32px;
+    }
 
-.middle{
-  align-self:center;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  font-size:32px;
-}
-
-.right{
-  align-self:flex-end;
-  font-weight:bold;
-}
-
-</style>
+    .right {
+      align-self: flex-end;
+      font-weight: bold;
+    }
+  </style>
 
 </head>
 
 <body>
-<div data-include="components/header.html"></div>
+  <div data-include="components/header.html"></div>
 
-<div class = "PlayingCardsBody">
-<h1>Annoyed Stoat Pest Cards</h1>
-<p>Creatures that constantly annoy the stoat.</p>
+  <div class="PlayingCardsBody">
+    <h1>Annoyed Stoat Pest Cards</h1>
+    <p>Creatures that constantly annoy the stoat.</p>
 
-<main id="playing-cards">
+    <main id="playing-cards">
 
-<div class="card">
-<div class="left">Rat</div>
-<div class="middle">
-<div>🐀</div>
-<div>🐀</div>
-</div>
-<div class="right">Rat</div>
-</div>
+      <div class="card">
+        <div class="left">Rat</div>
+        <div class="middle">
+          <div>🐀</div>
+          <div>🐀</div>
+        </div>
+        <div class="right">Rat</div>
+      </div>
 
-<div class="card">
-<div class="left">Snake</div>
-<div class="middle">
-<div>🐍</div>
-<div>🐍</div>
-</div>
-<div class="right">Snake</div>
-</div>
+      <div class="card">
+        <div class="left">Snake</div>
+        <div class="middle">
+          <div>🐍</div>
+          <div>🐍</div>
+        </div>
+        <div class="right">Snake</div>
+      </div>
 
-<div class="card">
-<div class="left">Raccoon</div>
-<div class="middle">
-<div>🦝</div>
-<div>🦝</div>
-</div>
-<div class="right">Raccoon</div>
-</div>
+      <div class="card">
+        <div class="left">Raccoon</div>
+        <div class="middle">
+          <div>🦝</div>
+          <div>🦝</div>
+        </div>
+        <div class="right">Raccoon</div>
+      </div>
 
-<div class="card">
-<div class="left">Possum</div>
-<div class="middle">
-<div>🐾</div>
-<div>🐾</div>
-</div>
-<div class="right">Possum</div>
-</div>
+      <div class="card">
+        <div class="left">Possum</div>
+        <div class="middle">
+          <div>🐾</div>
+          <div>🐾</div>
+        </div>
+        <div class="right">Possum</div>
+      </div>
 
-<div class="card">
-<div class="left">Squirrel</div>
-<div class="middle">
-<div>🐿</div>
-<div>🐿</div>
-</div>
-<div class="right">Squirrel</div>
-</div>
+      <div class="card">
+        <div class="left">Squirrel</div>
+        <div class="middle">
+          <div>🐿</div>
+          <div>🐿</div>
+        </div>
+        <div class="right">Squirrel</div>
+      </div>
 
-</main>
+    </main>
 
 </body>
 </div>
 <div data-include="components/footer.html"></div>
-<script src = "scripts/HTMLinclude.min.js"></script>
+<script src="scripts/HTMLinclude.min.js"></script>
+
 </html>
