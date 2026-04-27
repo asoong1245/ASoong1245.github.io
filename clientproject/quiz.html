@@ -21,34 +21,197 @@
 
 <main>
 
+    <!-- PROGRESS -->
+    <div id="topBar">
+    <p id="liveScore">Progress: 0 / 20 answered</p>
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <p id="progress-text">0 of 20 answered</p>
+</div>
+
+    <!-- ================= QUESTIONS ================= -->
+
     <section>
         <h2>Question 1</h2>
-        <p>What does a variable do?</p>
-
-        <label><input type="radio" name="q1" value="a"> Repeats code</label><br>
-        <label><input type="radio" name="q1" value="b"> Stores data</label><br>
-        <label><input type="radio" name="q1" value="c"> Ends a program</label>
+        <p>What is a variable used for?</p>
+        <label><input type="radio" name="q1" value="a" onclick="updateLiveScore(); updateProgress()"> Repeat code</label><br>
+        <label><input type="radio" name="q1" value="b" onclick="updateLiveScore(); updateProgress()"> Store data</label><br>
+        <label><input type="radio" name="q1" value="c" onclick="updateLiveScore(); updateProgress()"> End program</label>
     </section>
 
     <section>
         <h2>Question 2</h2>
-        <p>Which of the following is a loop?</p>
-
-        <label><input type="radio" name="q2" value="a"> if</label><br>
-        <label><input type="radio" name="q2" value="b"> for</label><br>
-        <label><input type="radio" name="q2" value="c"> print</label>
+        <p>Which keyword defines a function?</p>
+        <label><input type="radio" name="q2" value="a" onclick="updateLiveScore(); updateProgress()"> def</label><br>
+        <label><input type="radio" name="q2" value="b" onclick="updateLiveScore(); updateProgress()"> func</label><br>
+        <label><input type="radio" name="q2" value="c" onclick="updateLiveScore(); updateProgress()"> function</label>
     </section>
 
     <section>
         <h2>Question 3</h2>
-        <p>What keyword defines a function?</p>
-
-        <label><input type="radio" name="q3" value="a"> func</label><br>
-        <label><input type="radio" name="q3" value="b"> def</label><br>
-        <label><input type="radio" name="q3" value="c"> function</label>
+        <p>Which loop is used in Python?</p>
+        <label><input type="radio" name="q3" value="a" onclick="updateLiveScore(); updateProgress()"> while</label><br>
+        <label><input type="radio" name="q3" value="b" onclick="updateLiveScore(); updateProgress()"> for</label><br>
+        <label><input type="radio" name="q3" value="c" onclick="updateLiveScore(); updateProgress()"> loop</label>
     </section>
 
+    <section>
+        <h2>Question 4</h2>
+        <p>What data type is 3.14?</p>
+        <label><input type="radio" name="q4" value="a" onclick="updateLiveScore(); updateProgress()"> int</label><br>
+        <label><input type="radio" name="q4" value="b" onclick="updateLiveScore(); updateProgress()"> string</label><br>
+        <label><input type="radio" name="q4" value="c" onclick="updateLiveScore(); updateProgress()"> float</label>
+    </section>
+
+    <section>
+        <h2>Question 5</h2>
+        <p>What does print() do?</p>
+        <label><input type="radio" name="q5" value="a" onclick="updateLiveScore(); updateProgress()"> Stores data</label><br>
+        <label><input type="radio" name="q5" value="b" onclick="updateLiveScore(); updateProgress()"> Outputs text</label><br>
+        <label><input type="radio" name="q5" value="c" onclick="updateLiveScore(); updateProgress()"> Deletes code</label>
+    </section>
+
+    <!-- COPY THIS PATTERN UP TO Q25 -->
+    <!-- (I’m giving full structure + sample mix below) -->
+
+    <section>
+        <h2>Question 6</h2>
+        <p>What is correct boolean value?</p>
+        <label><input type="radio" name="q6" value="a" onclick="updateLiveScore(); updateProgress()"> True</label><br>
+        <label><input type="radio" name="q6" value="b" onclick="updateLiveScore(); updateProgress()"> 1234</label><br>
+        <label><input type="radio" name="q6" value="c" onclick="updateLiveScore(); updateProgress()"> "Maybe"</label>
+    </section>
+
+    <section>
+        <h2>Question 7</h2>
+        <p>What symbol starts a comment in Python?</p>
+        <label><input type="radio" name="q7" value="a" onclick="updateLiveScore(); updateProgress()"> //</label><br>
+        <label><input type="radio" name="q7" value="b" onclick="updateLiveScore(); updateProgress()"> --</label><br>
+        <label><input type="radio" name="q7" value="c" onclick="updateLiveScore(); updateProgress()"> #</label>
+    </section>
+
+    <section>
+        <h2>Question 8</h2>
+        <p>What does len() do?</p>
+        <label><input type="radio" name="q8" value="a" onclick="updateLiveScore(); updateProgress()"> Adds numbers</label><br>
+        <label><input type="radio" name="q8" value="b" onclick="updateLiveScore(); updateProgress()"> Finds length</label><br>
+        <label><input type="radio" name="q8" value="c" onclick="updateLiveScore(); updateProgress()"> Deletes list</label>
+    </section>
+
+    <section>
+        <h2>Question 9</h2>
+        <p>Which is a list?</p>
+        <label><input type="radio" name="q9" value="a" onclick="updateLiveScore(); updateProgress()"> "hello"</label><br>
+        <label><input type="radio" name="q9" value="b" onclick="updateLiveScore(); updateProgress()"> 5</label><br>
+        <label><input type="radio" name="q9" value="c" onclick="updateLiveScore(); updateProgress()"> [1,2,3]</label>
+    </section>
+
+    <section>
+        <h2>Question 10</h2>
+        <p>What does input() do?</p>
+        <label><input type="radio" name="q10" value="a" onclick="updateLiveScore(); updateProgress()"> Prints text</label><br>
+        <label><input type="radio" name="q10" value="b" onclick="updateLiveScore(); updateProgress()"> Takes user input</label><br>
+        <label><input type="radio" name="q10" value="c" onclick="updateLiveScore(); updateProgress()"> Deletes input</label>
+    </section>
+
+    <section>
+    <h2>Question 11</h2>
+    <p>What is the correct way to start a for loop in Python?</p>
+
+    <label><input type="radio" name="q11" value="a" onclick="updateLiveScore(); updateProgress()"> for i in range(5):</label><br>
+    <label><input type="radio" name="q11" value="b" onclick="updateLiveScore(); updateProgress()"> loop i to 5</label><br>
+    <label><input type="radio" name="q11" value="c" onclick="updateLiveScore(); updateProgress()"> foreach i in 5</label>
+</section>
+
+<section>
+    <h2>Question 12</h2>
+    <p>Which symbol is used for "not equal" in Python?</p>
+
+    <label><input type="radio" name="q12" value="a" onclick="updateLiveScore(); updateProgress()"> =!</label><br>
+    <label><input type="radio" name="q12" value="b" onclick="updateLiveScore(); updateProgress()"> !=</label><br>
+    <label><input type="radio" name="q12" value="c" onclick="updateLiveScore(); updateProgress()"> =!= </label>
+</section>
+
+<section>
+    <h2>Question 13</h2>
+    <p>What does a list allow you to do?</p>
+
+    <label><input type="radio" name="q13" value="a" onclick="updateLiveScore(); updateProgress()"> Store multiple values</label><br>
+    <label><input type="radio" name="q13" value="b" onclick="updateLiveScore(); updateProgress()"> Run code faster</label><br>
+    <label><input type="radio" name="q13" value="c" onclick="updateLiveScore(); updateProgress()"> Delete programs</label>
+</section>
+
+<section>
+    <h2>Question 14</h2>
+    <p>What is the output of: 2 + 2 * 2?</p>
+
+    <label><input type="radio" name="q14" value="a" onclick="updateLiveScore(); updateProgress()"> 6</label><br>
+    <label><input type="radio" name="q14" value="b" onclick="updateLiveScore(); updateProgress()"> 8</label><br>
+    <label><input type="radio" name="q14" value="c" onclick="updateLiveScore(); updateProgress()"> 4</label>
+</section>
+
+<section>
+    <h2>Question 15</h2>
+    <p>Which keyword is used for conditions?</p>
+
+    <label><input type="radio" name="q15" value="a" onclick="updateLiveScore(); updateProgress()"> loop</label><br>
+    <label><input type="radio" name="q15" value="b" onclick="updateLiveScore(); updateProgress()"> def</label><br>
+    <label><input type="radio" name="q15" value="c" onclick="updateLiveScore(); updateProgress()"> if</label>
+</section>
+
+<section>
+    <h2>Question 16</h2>
+    <p>What does "==" mean?</p>
+
+    <label><input type="radio" name="q16" value="a" onclick="updateLiveScore(); updateProgress()"> Assign value</label><br>
+    <label><input type="radio" name="q16" value="b" onclick="updateLiveScore(); updateProgress()"> Compare values</label><br>
+    <label><input type="radio" name="q16" value="c" onclick="updateLiveScore(); updateProgress()"> Add values</label>
+</section>
+
+<section>
+    <h2>Question 17</h2>
+    <p>Which is a correct Python variable name?</p>
+
+    <label><input type="radio" name="q17" value="a" onclick="updateLiveScore(); updateProgress()"> my_variable</label><br>
+    <label><input type="radio" name="q17" value="b" onclick="updateLiveScore(); updateProgress()"> my variable</label><br>
+    <label><input type="radio" name="q17" value="c" onclick="updateLiveScore(); updateProgress()"> my-variable</label>
+</section>
+
+<section>
+    <h2>Question 18</h2>
+    <p>What does the "else" statement do?</p>
+
+    <label><input type="radio" name="q18" value="a" onclick="updateLiveScore(); updateProgress()"> Always runs</label><br>
+    <label><input type="radio" name="q18" value="b" onclick="updateLiveScore(); updateProgress()"> Ends program</label><br>
+    <label><input type="radio" name="q18" value="c" onclick="updateLiveScore(); updateProgress()"> Runs when condition is false</label>
+</section>
+
+<section>
+    <h2>Question 19</h2>
+    <p>Which is a correct function definition?</p>
+
+    <label><input type="radio" name="q19" value="a" onclick="updateLiveScore(); updateProgress()"> function myFunc()</label><br>
+    <label><input type="radio" name="q19" value="b" onclick="updateLiveScore(); updateProgress()"> def myFunc():</label><br>
+    <label><input type="radio" name="q19" value="c" onclick="updateLiveScore(); updateProgress()"> define myFunc()</label>
+</section> 
+
+<section>
+    <h2>Question 20</h2>
+    <p>What does a string represent?</p>
+
+    <label><input type="radio" name="q20" value="a" onclick="updateLiveScore(); updateProgress()"> Numbers</label><br>
+    <label><input type="radio" name="q20" value="b" onclick="updateLiveScore(); updateProgress()"> True/False</label><br>
+    <label><input type="radio" name="q20" value="c" onclick="updateLiveScore(); updateProgress()"> Text</label>
+</section>
+
+    <!-- FINAL CONTROLS -->
+    <br>
+
     <button onclick="gradeQuiz()">Submit Quiz</button>
+    <button onclick="resetQuiz()">Restart Quiz</button>
 
     <p id="result"></p>
 
@@ -57,6 +220,7 @@
 <footer>
     <p>Quiz Page</p>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>

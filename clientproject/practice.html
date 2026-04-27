@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Practice</title>
+    <title>Interactive Practice</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header><h1>Practice</h1></header>
+<header>
+    <h1>Interactive Practice</h1>
+</header>
 
 <nav>
     <ul>
@@ -19,45 +21,134 @@
     </ul>
 </nav>
 
+<!-- ONLY showing the <main> section for clarity -->
 <main>
 
-    <section>
-        <h2>Practice 1</h2>
+    <div id="topBar">
+        <p id="stats">Score: 0 | Progress: 0%</p>
+    </div>
+
+    <!-- Q1 VARIABLES -->
+    <section class="card">
+        <h2>Question 1</h2>
         <p>What is the value of x?</p>
-        <pre>x = 10</pre>
-
-        <input type="text" id="p1">
-        <button onclick="checkAnswer('p1', '10', 'r1')">Check</button>
-        <p id="r1"></p>
+        <pre>x = 5</pre>
+        <input id="q1">
+        <button onclick="showHint('h1')">Hint</button>
+        <button onclick="check('q1','5')">Check</button>
+        <p id="h1" class="hint"></p>
+        <p id="f1"></p>
     </section>
 
-    <section>
-        <h2>Practice 2</h2>
-        <p>What will this loop print? (last number)</p>
-        <pre>
-for i in range(3):
-    print(i)
-        </pre>
-
-        <input type="text" id="p2">
-        <button onclick="checkAnswer('p2', '2', 'r2')">Check</button>
-        <p id="r2"></p>
+    <!-- Q2 DATA TYPES -->
+    <section class="card">
+        <h2>Question 2</h2>
+        <p>What data type is 3.5?</p>
+        <input id="q2">
+        <button onclick="showHint('h2')">Hint</button>
+        <button onclick="check('q2','float')">Check</button>
+        <p id="h2" class="hint"></p>
+        <p id="f2"></p>
     </section>
 
-    <section>
-        <h2>Practice 3</h2>
-        <p>What keyword is used to define a function?</p>
-
-        <input type="text" id="p3">
-        <button onclick="checkAnswer('p3', 'def', 'r3')">Check</button>
-        <p id="r3"></p>
+    <!-- Q3 COMMENTS -->
+    <section class="card">
+        <h2>Question 3</h2>
+        <p>What symbol is used for comments in Python?</p>
+        <input id="q3">
+        <button onclick="showHint('h3')">Hint</button>
+        <button onclick="check('q3','#')">Check</button>
+        <p id="h3" class="hint"></p>
+        <p id="f3"></p>
     </section>
+
+    <!-- Q4 OPERATORS -->
+    <section class="card">
+        <h2>Question 4</h2>
+        <p>What does x == 10 return?</p>
+        <input id="q4">
+        <button onclick="showHint('h4')">Hint</button>
+        <button onclick="check('q4','true')">Check</button>
+        <p id="h4" class="hint"></p>
+        <p id="f4"></p>
+    </section>
+
+    <!-- Q5 PRECEDENCE -->
+    <section class="card">
+        <h2>Question 5</h2>
+        <p>What is the result of: 5 + 2 / 2?</p>
+        <input id="q5">
+        <button onclick="showHint('h5')">Hint</button>
+        <button onclick="check('q5','6')">Check</button>
+        <p id="h5" class="hint"></p>
+        <p id="f5"></p>
+    </section>
+
+    <!-- Q6 LEN() -->
+    <section class="card">
+        <h2>Question 6</h2>
+        <p>What does len("hello") return?</p>
+        <input id="q6">
+        <button onclick="showHint('h6')">Hint</button>
+        <button onclick="check('q6','5')">Check</button>
+        <p id="h6" class="hint"></p>
+        <p id="f6"></p>
+    </section>
+
+    <!-- Q7 LISTS -->
+    <section class="card">
+        <h2>Question 7</h2>
+        <p>What is printed?</p>
+        <pre>list = ["banana", "apple", "cherry"]</pre>
+        <pre>print(list[1])</pre>
+        <input id="q7">
+        <button onclick="showHint('h7')">Hint</button>
+        <button onclick="check('q7','apple')">Check</button>
+        <p id="h7" class="hint"></p>
+        <p id="f7"></p>
+    </section>
+
+    <!-- Q8 DICTIONARIES -->
+    <section class="card">
+        <h2>Question 8</h2>
+        <p>What key is used in student["name"]?</p>
+        <input id="q8">
+        <button onclick="showHint('h8')">Hint</button>
+        <button onclick="check('q8','name')">Check</button>
+        <p id="h8" class="hint"></p>
+        <p id="f8"></p>
+    </section>
+
+    <!-- Q9 LOOPS -->
+    <section class="card">
+        <h2>Question 9</h2>
+        <p>What number does range(5) start with?</p>
+        <input id="q9">
+        <button onclick="showHint('h9')">Hint</button>
+        <button onclick="check('q9','0')">Check</button>
+        <p id="h9" class="hint"></p>
+        <p id="f9"></p>
+    </section>
+
+    <!-- Q10 FUNCTIONS -->
+    <section class="card">
+        <h2>Question 10</h2>
+        <p>What keyword defines a function in Python?</p>
+        <input id="q10">
+        <button onclick="showHint('h10')">Hint</button>
+        <button onclick="check('q10','def')">Check</button>
+        <p id="h10" class="hint"></p>
+        <p id="f10"></p>
+    </section>
+
+    <button onclick="resetPractice()" class="resetBtn">Reset All</button>
 
 </main>
 
 <footer>
-    <p>Practice Page</p>
+    <p>Interactive Practice System</p>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>

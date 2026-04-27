@@ -23,41 +23,189 @@
 
     <section>
         <h2>Variables</h2>
-        <p>Variables are used to store data in Python.</p>
+        <p>Variables are containers used to store data in a program. In Python, you do not need to declare the type of a variable because Python automatically determines it.</p>
+        <p>Variables can store numbers, text, lists, and more. They can also change value during program execution.</p>
         <pre>
 x = 5
 name = "John"
         </pre>
-        <p>You can change the value of a variable anytime.</p>
+        <p>In this example, <code>x</code> stores a number and <code>name</code> stores text.</p>
     </section>
 
     <section>
         <h2>Data Types</h2>
+        <p>Data types define what kind of value a variable holds. Python automatically assigns types based on the value.</p>
         <ul>
-            <li>int → whole numbers (5, 10)</li>
-            <li>float → decimals (3.14)</li>
-            <li>string → text ("hello")</li>
-            <li>boolean → True or False</li>
+            <li><b>int</b> → whole numbers like 10 or -3</li>
+            <li><b>float</b> → decimal numbers like 3.14</li>
+            <li><b>string</b> → text inside quotes</li>
+            <li><b>boolean</b> → True or False values</li>
+            <li><b>list</b> → collection of multiple items</li>
         </ul>
     </section>
 
     <section>
+        <h2>Comments</h2>
+        <p>Comments are used to explain code and are ignored by Python when running the program. They help programmers understand what the code is doing.</p>
+        <pre>
+# This is a comment
+x = 5  # This stores a value
+        </pre>
+        <p>Comments are very useful for organizing and documenting code.</p>
+    </section>
+
+    <section>
+        <h2>Operators & Comparisons</h2>
+        <p>Comparison operators are used to compare two values and return True or False.</p>
+        <ul>
+            <li><code>==</code> → checks if values are equal</li>
+            <li><code>!=</code> → checks if values are not equal</li>
+            <li><code>&gt;</code> → greater than</li>
+            <li><code>&lt;</code> → less than</li>
+        </ul>
+        <pre>
+x = 10
+print(x == 10)  # True
+print(x != 5)   # True
+        </pre>
+    </section>
+
+    <section>
+        <h2>Operator Precedence</h2>
+        <p>Operator precedence determines the order in which operations are performed in an expression. Python follows standard math rules.</p>
+        <p>Multiplication and division happen before addition and subtraction unless parentheses are used.</p>
+        <pre>
+result = 2 + 2 * 2
+# multiplication happens first → 2 * 2 = 4 → 2 + 4 = 6
+        </pre>
+        <p>You can use parentheses to change the order.</p>
+    </section>
+
+    <section>
+        <h2>Built-in Functions</h2>
+        <p>Built-in functions are pre-written functions provided by Python that you can use without importing anything.</p>
+        <p>One common function is <code>len()</code>, which returns the number of items in a string or list.</p>
+        <pre>
+text = "hello"
+print(len(text))  # 5
+        </pre>
+    </section>
+
+    <section>
+        <h2>Lists</h2>
+        <p>Lists are used to store multiple values in a single variable. They are ordered and can be changed.</p>
+        <pre>
+fruits = ["apple", "banana", "cherry"]
+print(fruits[0])
+        </pre>
+        <p>You can also add items using <code>append()</code>.</p>
+    </section>
+
+    <section>
+        <h2>Dictionaries</h2>
+        <p>Dictionaries store data in key-value pairs. Each value is accessed using its key instead of a number index.</p>
+        <pre>
+student = {
+    "name": "Alice",
+    "age": 20
+}
+
+print(student["name"])
+        </pre>
+    </section>
+
+    <section>
         <h2>Loops</h2>
-        <p>Loops repeat a block of code multiple times.</p>
+        <p>Loops are used to repeat code multiple times.</p>
+        <p>A <code>for</code> loop repeats a fixed number of times, while a <code>while</code> loop runs as long as a condition is true.</p>
         <pre>
 for i in range(5):
     print(i)
+
+x = 0
+while x < 5:
+    print(x)
+    x += 1
         </pre>
     </section>
 
     <section>
         <h2>Functions</h2>
-        <p>Functions allow you to reuse code.</p>
+        <p>Functions are reusable blocks of code that perform a specific task. They help keep programs organized and avoid repetition.</p>
         <pre>
-def greet():
-    print("Hello!")
+def greet(name):
+    print("Hello " + name)
 
-greet()
+greet("John")
+        </pre>
+    </section>
+
+    <section>
+        <h2>Conditionals</h2>
+        <p>Conditionals allow programs to make decisions based on conditions.</p>
+        <p>If the condition is True, the code runs. Otherwise, it moves to the next option.</p>
+        <pre>
+x = 10
+
+if x > 5:
+    print("Greater than 5")
+else:
+    print("5 or less")
+        </pre>
+    </section>
+
+    <section>
+        <h2>Input & Output</h2>
+        <p>Input allows the user to enter data into the program. Output displays results.</p>
+        <pre>
+name = input("Enter your name: ")
+print("Hello " + name)
+        </pre>
+    </section>
+
+    <section>
+        <h2>Variable Naming Rules</h2>
+        <p>Variable names must follow rules to be valid in Python:</p>
+        <ul>
+            <li>Must start with a letter or underscore</li>
+            <li>No spaces allowed</li>
+            <li>No special symbols like - or !</li>
+            <li>Case-sensitive (myVar ≠ myvar)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Error Handling</h2>
+        <p>Error handling allows programs to continue running even when something goes wrong.</p>
+        <p>It uses <code>try</code> and <code>except</code> blocks.</p>
+        <pre>
+try:
+    x = 10 / 0
+except:
+    print("An error occurred")
+        </pre>
+    </section>
+
+    <section>
+        <h2>Modules</h2>
+        <p>Modules are external Python files that provide extra functionality.</p>
+        <p>You can import built-in modules like <code>math</code> to access advanced functions.</p>
+        <pre>
+import math
+print(math.sqrt(16))
+        </pre>
+    </section>
+
+    <section>
+        <h2>Object-Oriented Programming (OOP)</h2>
+        <p>OOP is a programming style that uses classes and objects to represent real-world things.</p>
+        <p>A class is a blueprint, and an object is an instance of that blueprint.</p>
+        <pre>
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+dog1 = Dog("Buddy")
         </pre>
     </section>
 
