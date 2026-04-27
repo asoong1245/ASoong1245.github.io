@@ -1,6 +1,3 @@
-// =========================
-// CONFIG
-// =========================
 
 const TOTAL_QUESTIONS = 20;
 
@@ -27,9 +24,6 @@ const answerKey = {
     q20: "c",
 };
 
-// =========================
-// QUIZ GRADING
-// =========================
 
 function getScore() {
     let score = 0;
@@ -69,22 +63,18 @@ function gradeQuiz() {
     result.textContent = `You scored ${score}/${TOTAL_QUESTIONS} (${percent}%)`;
     result.style.color = "green";
 
-    // show feedback
     for (let i = 1; i <= TOTAL_QUESTIONS; i++) {
         showFeedback("q" + i);
     }
 }
 
-// =========================
-// LIVE SCORE
-// =========================
 
 function updateLiveScore() {
     let answered = 0;
 
     for (let i = 1; i <= TOTAL_QUESTIONS; i++) {
         if (document.querySelector(`input[name="q${i}"]:checked`)) {
-            answered++; // counts BOTH correct and wrong
+            answered++; 
         }
     }
 
@@ -92,9 +82,6 @@ function updateLiveScore() {
         `Progress: ${answered} / ${TOTAL_QUESTIONS} answered`;
 }
 
-// =========================
-// PROGRESS BAR
-// =========================
 
 function updateProgress() {
     let answered = 0;
@@ -112,9 +99,6 @@ function updateProgress() {
         `${answered} of ${TOTAL_QUESTIONS} answered`;
 }
 
-// =========================
-// FEEDBACK SYSTEM
-// =========================
 
 function showFeedback(questionName) {
     let options = document.getElementsByName(questionName);
@@ -135,9 +119,6 @@ function showFeedback(questionName) {
     });
 }
 
-// =========================
-// PRACTICE PAGE CHECKER
-// =========================
 
 function checkAnswer(inputId, correctAnswer, resultId) {
     let userInput = document.getElementById(inputId).value.trim().toLowerCase();
@@ -157,9 +138,6 @@ function checkAnswer(inputId, correctAnswer, resultId) {
     }
 }
 
-// =========================
-// RESET QUIZ
-// =========================
 
 function resetQuiz() {
     let inputs = document.querySelectorAll('input[type="radio"]');
@@ -209,7 +187,6 @@ const hints = {
     h10: "Used to define functions."
 };
 
-// update UI
 function updateUI() {
     let percent = Math.round((score / total) * 100);
 
@@ -219,7 +196,6 @@ function updateUI() {
     document.getElementById("progressBar").style.width = percent + "%";
 }
 
-// check answers
 function check(id, correct) {
     let input = document.getElementById(id);
     let feedback = document.getElementById("f" + id.slice(1));
@@ -250,12 +226,10 @@ function check(id, correct) {
     updateUI();
 }
 
-// hints
 function showHint(id) {
     document.getElementById(id).textContent = hints[id];
 }
 
-// reset
 function resetPractice() {
     for (let i = 1; i <= total; i++) {
         let input = document.getElementById("q" + i);
@@ -274,7 +248,6 @@ function resetPractice() {
     updateUI();
 }
 
-// live typing feedback
 document.querySelectorAll("input").forEach(input => {
     input.addEventListener("input", () => {
         let id = input.id;
@@ -305,7 +278,6 @@ function updateProgress() {
     bar.style.width = percent + "%";
     text.textContent = `${answered} of ${TOTAL_QUESTIONS} answered`;
 
-    // 👇 MAKE IT GREEN AS IT FILLS
     bar.style.backgroundColor = `hsl(${percent * 1.2}, 80%, 45%)`;
 }
 
