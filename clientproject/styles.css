@@ -109,3 +109,11 @@ a:hover {
 main {
     margin-top: 80px;
 }
+
+#python-logo {
+    position: absolute;
+    top: 170px;
+    left: -70px;
+    width: 250px;
+    height: auto;
+}
