@@ -177,7 +177,7 @@ const answers = {
 const hints = {
     h1: "Look at the variable assignment.",
     h2: "Decimals in Python are called this type.",
-    h3: "Python comment symbol.",
+    h3: "Hashtag",
     h4: "Equality comparison returns True/False.",
     h5: "Multiplication happens before addition.",
     h6: "len() counts items.",
